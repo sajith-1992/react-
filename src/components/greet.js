@@ -1,5 +1,6 @@
 import React from "react";
 
- export const Greet=()=> <h1>hai this is sajith</h1>
+ export const Greet=(props)=>{
+ return(<h1>hai this is sajith{props.name}</h1>)}
 
 
