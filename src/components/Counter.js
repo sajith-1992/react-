@@ -13,8 +13,9 @@ increment(){
         
         count : this.state.count +1
 
-    })
+    },()=>{console.log(this.count)})
 }
+
   render() {
     return (
       <div>
