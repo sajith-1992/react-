@@ -9,18 +9,23 @@ constructor(props) {
   }
 }
 increment(){
-    this.setState({
-        
-        count : this.state.count +1
+    this.setState((prevState)=>({
+        count:prevState.count +1
+    }))
+}
+incrementFive(){
+    this.increment()
+    this.increment()
+    this.increment()
+    this.increment()
 
-    },()=>{console.log(this.count)})
 }
 
   render() {
     return (
       <div>
           <h1>count {this.state.count}</h1>
-           <button onClick={()=>this.increment()}>click me</button>
+           <button onClick={()=>this.incrementFive()}>click me</button>
        
    
         </div>
