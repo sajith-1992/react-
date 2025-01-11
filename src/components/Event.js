@@ -7,9 +7,9 @@ import React, { Component } from 'react'
     this.state = {
        message:'hai'
     }
-    this.changemessage = this.changemessage.bind(this)
+    // this.changemessage = this.changemessage.bind(this)
   }
-  changemessage(){
+  changemessage =() =>{
     this.setState({
         message : "thankyou for connection"
     })
