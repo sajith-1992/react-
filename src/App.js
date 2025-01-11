@@ -15,7 +15,7 @@ function App() {
    
      <Counter/>
      <Decon name="sajith" heroName="hello"></Decon>
-
+     <Class name="whiernsdklfnlkasjdflkj"></Class>
     </div>
   );
 }
