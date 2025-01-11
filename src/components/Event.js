@@ -7,6 +7,7 @@ import React, { Component } from 'react'
     this.state = {
        message:'hai'
     }
+    this.changemessage = this.changemessage.bind(this)
   }
   changemessage(){
     this.setState({
@@ -21,8 +22,7 @@ import React, { Component } from 'react'
         <hai>this  this {this.state.message}</hai>
         <br></br>
 
-         <button onClick={()=>this.changemessage()
-         } >Click</button>
+         <button onClick={this.changemessage } >Click</button>
         
     </div>
     )
