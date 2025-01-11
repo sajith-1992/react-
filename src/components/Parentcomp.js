@@ -12,9 +12,9 @@ class Parentcomp extends Component{
 
       this.parentmethod = this.parentmethod.bind(this)
     }
-    parentmethod(){
+    parentmethod(data){
 
-        alert(`hello ${this.state.parent}`)
+        alert(`hello ${this.state.parent} kjsklj ${data}`)
     }
   render() {
     return (

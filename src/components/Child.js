@@ -3,7 +3,7 @@ import React from 'react'
 function Child(props) {
   return (
     <div>
-        <button onClick={props.parentmethod}>Great</button>
+        <button onClick={()=>props.parentmethod('child')}>Great</button>
     </div>
   )
 }
