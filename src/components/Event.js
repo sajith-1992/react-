@@ -21,7 +21,8 @@ import React, { Component } from 'react'
         <hai>this  this {this.state.message}</hai>
         <br></br>
 
-        <button onClick={this.changemessage.bind(this)} >Click</button>
+         <button onClick={()=>this.changemessage()
+         } >Click</button>
         
     </div>
     )
