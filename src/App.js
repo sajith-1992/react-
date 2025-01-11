@@ -7,6 +7,8 @@ import State from './components/State';
 import Counter from './components/Counter';
 import Decon from './components/Destructuringporps'
 import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+import Event from './components/Event';
 
 
 
@@ -17,7 +19,9 @@ function App() {
      {/* <Counter/>
      <Decon name="sajith" heroName="hello"></Decon>
      <Class name="whiernsdklfnlkasjdflkj"></Class> */}
-     <FunctionClick/>
+     {/* <FunctionClick/>
+     <ClassClick /> */}
+     <Event/>
     </div>
   );
 }
