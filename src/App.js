@@ -6,6 +6,7 @@ import Hello from './components/Hello';
 import State from './components/State';
 import Counter from './components/Counter';
 import Decon from './components/Destructuringporps'
+import FunctionClick from './components/FunctionClick';
 
 
 
@@ -13,9 +14,10 @@ function App() {
   return (
     <div className="App">
    
-     <Counter/>
+     {/* <Counter/>
      <Decon name="sajith" heroName="hello"></Decon>
-     <Class name="whiernsdklfnlkasjdflkj"></Class>
+     <Class name="whiernsdklfnlkasjdflkj"></Class> */}
+     <FunctionClick/>
     </div>
   );
 }
