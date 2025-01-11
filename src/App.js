@@ -9,19 +9,22 @@ import Decon from './components/Destructuringporps'
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import Event from './components/Event';
+import Parentcomp from './components/Parentcomp'
 
 
 
 function App() {
   return (
     <div className="App">
+
+      <Parentcomp/>
    
      {/* <Counter/>
      <Decon name="sajith" heroName="hello"></Decon>
      <Class name="whiernsdklfnlkasjdflkj"></Class> */}
      {/* <FunctionClick/>
      <ClassClick /> */}
-     <Event/>
+     {/* <Event/> */}
     </div>
   );
 }
