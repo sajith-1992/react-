@@ -10,13 +10,13 @@ class IfElse extends Component {
  }
  
     render() {
-     le    
+     let message    
     if(this.state.LogedIn){
         return (
-      <div>Welcome sajith</div>
+      message= <div>Welcome sajith</div>
     )} else{
         return (
-            <div>Welocme guest</div>
+      message = <div>Welocme guest</div>
 
    ) }
   }
