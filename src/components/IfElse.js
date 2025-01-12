@@ -5,17 +5,12 @@ class IfElse extends Component {
    super(props)
  
    this.state = {
-      LogedIn : false
+      LogedIn : true
    }
  }
  
     render() {
-     return this.state.LogedIn ? (
-        <div>this is sajith</div>
-     ):(
-     <div>this is welcome guest</div>
-    
-    )
+    return this.state.LogedIn && <div>this is sjaith</div>
 }}
 
 export default IfElse
