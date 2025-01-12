@@ -17,14 +17,24 @@ import Map from './components/Map'
 import Person from './components/Person'
 
 import Style from './components/Style';
+import  Inline from './components/Inline'
+// import './Appstyle.css'
+// import Style from '.AppStyle.module.css'
+import Form from './components/Form'
 
 
 
 function App() {
   return (
     <div className="App">
+      <Form />
 
-      <Style primary={true}></Style>
+      {/* <error className='err' >error</error>
+      <hello  className={Style.import}>hello</hello>
+      <Inline /> */}
+
+
+      {/* <Style primary={true}></Style> */}
      {/* <Person></Person> */}
       {/* <Map/> */}
       {/* <Statements/> */}

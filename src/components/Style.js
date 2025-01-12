@@ -6,7 +6,7 @@ function Style(props) {
   return (
     <div >
         
-       <h1 className={primary}>Style</h1> 
+       <h1 className= {`${primary} font `}   >Style</h1> 
         
         </div>
   )
