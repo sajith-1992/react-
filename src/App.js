@@ -11,14 +11,16 @@ import ClassClick from './components/ClassClick';
 import Event from './components/Event';
 import Parentcomp from './components/Parentcomp'
 
+import Statements from './components/IfElse';
+
 
 
 function App() {
   return (
     <div className="App">
-
-      <Parentcomp/>
-   
+        <Statements/>
+      {/* <Parentcomp/> */}
+     
      {/* <Counter/>
      <Decon name="sajith" heroName="hello"></Decon>
      <Class name="whiernsdklfnlkasjdflkj"></Class> */}
