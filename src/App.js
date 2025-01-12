@@ -12,21 +12,26 @@ import Event from './components/Event';
 import Parentcomp from './components/Parentcomp'
 
 import Statements from './components/IfElse';
+import Map from './components/Map'
+
+import Person from './components/Person'
 
 
 
 function App() {
   return (
     <div className="App">
-        <Statements/>
+     <Person></Person>
+      {/* <Map/> */}
+      {/* <Statements/> */}
       {/* <Parentcomp/> */}
      
-     {/* <Counter/>
-     <Decon name="sajith" heroName="hello"></Decon>
-     <Class name="whiernsdklfnlkasjdflkj"></Class> */}
-     {/* <FunctionClick/>
-     <ClassClick /> */}
-     {/* <Event/> */}
+      {/* <Counter/>
+      <Decon name="sajith" heroName="hello"></Decon>
+      <Class name="whiernsdklfnlkasjdflkj"></Class> */}
+      {/* <FunctionClick/>
+      <ClassClick /> */}
+      {/* <Event/> */}
     </div>
   );
 }
