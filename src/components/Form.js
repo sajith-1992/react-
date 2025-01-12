@@ -6,22 +6,38 @@ import React, { Component } from 'react'
   
     this.state = {
        
-       username:''
+       username:'',
+       Topic:''
+
     }
   }
   usernamechange=(event)=>{
     
    this.setState({
-    username:event.target.value
+    username:event.target.value,
+    Topic:event.target.value
   })
+handleSubmit=(event)=>{
+     alert(`${this.state.user} hfdsh ${this.state.Topic}`)
+
+     }
+  
 
   }
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label>username</label>
           <input type='text' value={this.state.username}  onChange={this.usernamechange} /> 
+          <select  value={this.setState.Topic} onChange={this.Topic} >
+          
+        <option>First Value</option>
+        <option>Second Value</option>
+        <option >Third Value</option>
+          </select>
+
+          <button type="submit">submit</button>
         </form>
       </div>
     )
