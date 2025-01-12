@@ -12,13 +12,14 @@ class IfElse extends Component {
     render() {
      let message    
     if(this.state.LogedIn){
-        return (
+        
       message= <div>Welcome sajith</div>
-    )} else{
-        return (
+    } else{
+       
       message = <div>Welocme guest</div>
 
-   ) }
+    }
+    return(<div>{message}</div>)
   }
 }
 
