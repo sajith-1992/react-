@@ -16,12 +16,16 @@ import Map from './components/Map'
 
 import Person from './components/Person'
 
+import Style from './components/Style';
+
 
 
 function App() {
   return (
     <div className="App">
-     <Person></Person>
+
+      <Style primary={true}></Style>
+     {/* <Person></Person> */}
       {/* <Map/> */}
       {/* <Statements/> */}
       {/* <Parentcomp/> */}
