@@ -7,7 +7,7 @@ import React, { Component } from 'react'
     this.state = {
        
        username:'',
-       Topic:''
+       Topic:'volvo'
 
     }
   }
@@ -20,31 +20,41 @@ import React, { Component } from 'react'
 
 
   
-  tpusernamechange=(event)=>{
+  selectusernamechange=(event)=>{
     
     this.setState({
      Topic:event.target.value,
     
    })}
-handleSubmit=(event)=>{
-     alert(`${this.state.user} hfdsh ${this.state.Topic}`)
+// handleSubmit=(event)=>{
+//      alert(`${this.state.user} hfdsh ${this.state.Topic}`)
 
-     }
+//      }
+selectOnchange=(event)=>{
+  this.setState({
+    Topic:event.target.value
+  })
+}
+submitform=(event)=>{
+  alert( `$this.state.username $this.state.Topic`)
+}
   
 
   
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.submitform} >
           <label>username</label>
           <input type='text' value={this.state.username}  onChange={this.usernamechange} /> 
-          <select  value={this.State.Topic} onChange={this.tpusernamechange} >
-          
-          <option>First Value</option>
-          <option>Second Value</option>
-          <option >Third Value</option>
-          </select>
+          <label for="cars">Choose a car:</label>
+
+<select value={this.state.Topic} onChange={this.selectOnchange} >
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
 
           <button type="submit">submit</button>
         </form>
