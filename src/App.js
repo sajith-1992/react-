@@ -21,14 +21,17 @@ import  Inline from './components/Inline'
 // import './Appstyle.css'
 // import Style from '.AppStyle.module.css'
 import Form from './components/Form'
+import Fragment from './components/ReactFragment';
+import Ref from './components/Refcom'
 
 
 
 function App() {
   return (
     <div className="App">
-      <Form />
-
+      <Ref/> 
+      {/* <Form />
+      <Fragment /> */}
       {/* <error className='err' >error</error>
       <hello  className={Style.import}>hello</hello>
       <Inline /> */}
